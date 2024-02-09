@@ -1,0 +1,46 @@
+body{
+  overflow-x: hidden;
+}
+/* .text {
+  background: url(https://kalvium.community/images/sidebar-3d-logo.svg) 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.brand {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(225, 225, 225, 0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  padding: 10px 20px;
+  height: 40px;
+  width: 97.5vw; /* Ensure navbar spans the entire width */
+}
+
+
+.search-bar {
+  padding: 10px 200px 10px 100px;
+  border-radius: 4px;
+  background-color: rgb(168, 168, 168);
+  border: none;
+}
+
+.register-btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.register-btn:hover{
+  scale:  1.025;
+  transition: 0.5s;
+  background-color: #01356e;
+}
