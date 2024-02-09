@@ -8,11 +8,9 @@ function Form() {
     const [submit, setSubmit] = useState(false)
     const onSubmit =  () => {
         setSubmit(true)
-      }
+    }
     return (
-
         <div id='form-page'>
-
             <div className='form-container'>
                 {submit && (<h2>Registration Successful </h2>)}
                 <form className='flex-column'>
@@ -31,7 +29,6 @@ function Form() {
                     })}
                 />
                 {errors.name && <h3>{errors.name.message}</h3>}
-
                 <input placeholder='Email' 
                     {...register("email", {
                     required: "Email is required",
@@ -42,7 +39,6 @@ function Form() {
                     })}
                 />
                 {errors.email && <h3>{errors.email.message}</h3>}
-
                 <input  type='password' placeholder='Password'
                     {...register("password", {
                     required: "Password is required",
@@ -57,7 +53,6 @@ function Form() {
                     })}
                 />
                 {errors.password && <h3>{errors.password.message}</h3>}
-            
                 <input type='password' placeholder='Confirm Password'
                     {...register('confirm',{
                     required: "Confirm Your Password",
@@ -65,18 +60,12 @@ function Form() {
                     })}
                 />
                 {errors.confirm && <h3>{errors.confirm.message}</h3>}
-
                 <div id='signup'>
                     <button onClick={handleSubmit(onSubmit)}>Sign Up</button>
                 </div>
-                
                 </form>
-      
             </div>
-
         </div>
-
     )
 }
-
 export default Form

@@ -4,21 +4,18 @@
   padding: 0;
   text-align: center;
 }
-
 body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-
 .flex-column{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
 #form-page{
   height: 90vh;
   width: 100vw;
@@ -26,7 +23,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .form-container{
   height: 70vh;
   width: 50vw;
@@ -40,12 +36,10 @@ body{
   font-weight: bolder;
   font-style: italic;
 }
-
 form{
   height: 100%;
   width: 100%;
 }
-
 form input{
   height: 5vh;
   width: 20vw;

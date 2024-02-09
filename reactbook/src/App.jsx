@@ -8,11 +8,9 @@ import Book from './component/Book';
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const location = useLocation();
-
   const handleSearch = (query) => {
     setSearchQuery(query);
   };
-
   return (
     <div>
       <NavBar handleSearch={handleSearch} location={location} />

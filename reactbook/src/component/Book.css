@@ -6,11 +6,9 @@
   margin-left: 50px;
   grid-gap: 10px;
 }
-
 .book {
   text-align: center;
 }
-
 .book-box {
   justify-content: center;
   align-items: center;
@@ -23,36 +21,30 @@
   backdrop-filter: blur(1px);
   transition: background-color 0.3s;
 }
-
 .book-box:hover {
   transform: scale(1.025);
   transition: 0.5s;
   background-color: rgb(226, 226, 226);
 }
-
 .book-image {
-  width: 250px; /* Ensure the image fills its container */
+  width: 250px; 
   height: 300px;
-  margin-top: 10px; /* Maintain aspect ratio */
+  margin-top: 10px; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   justify-content: center;
   align-items: center;
 }
-
 .book-details {
   margin-top: 10px;
   color: rgb(0, 0, 255);
 }
-
 .book-title {
   font-size: 16px;
 }
-
 .book-rating {
   font-size: 12px;
 }
-
 .book-free {
   margin-left: 5px;
   font-weight: bolder;

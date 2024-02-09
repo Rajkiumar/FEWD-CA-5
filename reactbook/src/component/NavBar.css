@@ -20,17 +20,14 @@ body{
   color: #fff;
   padding: 10px 20px;
   height: 40px;
-  width: 97.5vw; /* Ensure navbar spans the entire width */
+  width: 97.5vw;
 }
-
-
 .search-bar {
   padding: 10px 200px 10px 100px;
   border-radius: 4px;
   background-color: rgb(168, 168, 168);
   border: none;
 }
-
 .register-btn {
   text-decoration: none;
   background-color: #007bff;
@@ -38,7 +35,6 @@ body{
   padding: 10px 20px;
   border-radius: 4px;
 }
-
 .register-btn:hover{
   scale:  1.025;
   transition: 0.5s;

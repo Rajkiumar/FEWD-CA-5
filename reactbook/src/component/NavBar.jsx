@@ -4,12 +4,10 @@ import { Link } from 'react-router-dom';
 
 const NavBar = ({ handleSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
-
   const handleChange = (e) => {
     setSearchQuery(e.target.value);
     handleSearch(e.target.value);
   };
-
   return (
     <div className="navbar">
       <div className="left">
@@ -30,5 +28,4 @@ const NavBar = ({ handleSearch }) => {
     </div>
   );
 };
-
 export default NavBar;

@@ -3,7 +3,6 @@ import './Book.css';
 
 const Book = ({ searchQuery }) => {
   const [books, setBooks] = useState([]);
-
   useEffect(() => {
     const fetchBooks = async () => {
       try {
@@ -21,14 +20,11 @@ const Book = ({ searchQuery }) => {
         console.error('Error fetching books:', error);
       }
     };
-
     fetchBooks();
   }, []);
-
   const filteredBooks = books.filter(book =>
     book.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
   return (
     <div className="book-container">
       {filteredBooks.length === 0 ? (
@@ -51,5 +47,4 @@ const Book = ({ searchQuery }) => {
     </div>
   );
 };
-
 export default Book;
